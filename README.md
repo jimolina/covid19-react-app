@@ -11,7 +11,7 @@ COVID-19 Info Data. A simple Reactjs example code.
 
 ## TODO
 
-1. **Replace the actual function() with Class()**
-2. **Add Date format and Num format**
+1. ~~Replace the actual function() with Class()~~
+2. ~~Add Date format and Num format~~
 3. Add some chart library 
 4. Add a loading icon while the data finish to load
