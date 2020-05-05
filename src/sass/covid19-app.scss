@@ -16,25 +16,41 @@ $images-url: "";
 
 @keyframes check-task-complete {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes display-task-added {
-  0% { opacity: 0; }
-  20% { opacity: 0.1; }
-  40% { opacity: 0.3; }
-  60% { opacity: 0.5; }
-  80% { opacity: 0.9; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes display-task-added-border {
-  0% { background-color: green; }
-  100% { background-color: transparent; }
+  0% {
+    background-color: green;
+  }
+  100% {
+    background-color: transparent;
+  }
 }
 
 /* ||General */
@@ -49,7 +65,7 @@ body {
   font-family: $font-raleway;
   font-size: 1rem;
   font-weight: 400;
-  letter-spacing: .03rem;
+  letter-spacing: 0.03rem;
   line-height: 2rem;
   min-width: 320px;
   overflow-x: hidden;
@@ -65,32 +81,44 @@ body {
 
 /* || General font/text styles */
 
-
-h1, h2, h3, h4, h5,
-.h1, .h2, .h3, .h4, .h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
   font-family: $font-oswald;
   font-weight: 700;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2.5rem;
   @media (min-width: 780px) {
-      font-size: 3rem;
+    font-size: 3rem;
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 1.5rem;
   @media (min-width: 780px) {
     font-size: 2rem;
   }
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.5rem;
 }
 
-h4, .h4, .display-5 {
+h4,
+.h4,
+.display-5 {
   font-size: 1rem;
 }
 
@@ -130,10 +158,11 @@ hr {
     margin-bottom: 0;
   }
 }
-  
+
 .data-grid {
-  margin-top: 40px;
-  
+  table {
+    border-radius: 3px;
+  }
   th {
     background-color: #ddd;
     border-bottom: 1px solid #ccc !important;
@@ -149,16 +178,37 @@ hr {
     padding-left: 20px !important;
     text-align: left !important;
   }
-  a, a:active {
+  a,
+  a:active {
     color: #001e3e;
     font-weight: bold;
     text-decoration: underline;
   }
 }
 
+.timeline {
+  &-chart {
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    padding: 40px 10px 10px;
+    .recharts-legend-item-text {
+      color: $primary-color;
+    }
+  }
+}
+
+.custom-tooltip {
+  background-color: white;
+  color: black;
+}
+
 .country__detail {
   min-height: 64vh;
-} 
+}
+
+.nodata {
+  color: $primary-color;
+}
 
 /* || Footer */
 
@@ -173,13 +223,13 @@ footer {
     text-decoration: underline;
     &:hover {
       .fa-html5 {
-        color: #E44D26;
+        color: #e44d26;
       }
       .fa-css3-alt {
-        color: #1A73BA;
+        color: #1a73ba;
       }
       .fa-sass {
-        color: #CF649A;
+        color: #cf649a;
       }
       .fa-bootstrap {
         color: #563d7c;
