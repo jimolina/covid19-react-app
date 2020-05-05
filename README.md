@@ -19,3 +19,5 @@ COVID-19 Info Data. A simple Reactjs example code.
 3. ~~Add some chart library~~
 4. Add a loading icon while the data finish to load
 5. Add a "go top" button
+6. Filter the Country List in order to display only countries with Confirmed Cases
+7. Add a filters options in the TH Country List
