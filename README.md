@@ -4,6 +4,8 @@
 
 COVID-19 Info Data. A simple Reactjs example code.
 
+Check how is working here: [https://jm-covid19-react-app.netlify.app/](https://jm-covid19-react-app.netlify.app/)
+
 ## Covid19 API:
 
 [https://about-corona.net/documentation](https://about-corona.net/documentation)
